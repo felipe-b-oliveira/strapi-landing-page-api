@@ -1,36 +1,43 @@
-# 🚀 Getting started with Strapi
+# React Avançado - Landing Page API
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+This is the API to create the [React Avançado Landing Page](https://reactavancado.com.br/).
 
-### `develop`
+## Requirements
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+This project uses [PostgreSQL](https://www.postgresql.org/), so, in order to make it working, install in your local machine or use Docker.
+
+The configuration to the Database can be found on [config/database.js](config/database.js)
+
+## Development
+
+After cloning this project, install the dependencies:
 
 ```
-npm run develop
-# or
+yarn install
+```
+
+And run using:
+
+```
 yarn develop
 ```
 
-### `start`
+The urls to access are:
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+- `http://localhost:1337/admin` - The Dashboard to create and populate data
+- `http://localhost:1337/graphql` - GraphQL Playground to test your queries
 
-```
-npm run start
-# or
-yarn start
-```
+The first time to access the Admin you'll need to create an user.
 
-### `build`
+## Dump data
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+This project uses `Postgres` and if you want all the data previously, unzip the [data.zip](data.zip), copy the `uploads` folder to [public/uploads](public/uploads) and restore the data from the `local.dump` file inside the zip.
 
-```
-npm run build
-# or
-yarn build
-```
+---
+
+# 🚀 About Strapi
+
+Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
 ## ⚙️ Deployment
 
@@ -53,5 +60,3 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
 
 ---
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
